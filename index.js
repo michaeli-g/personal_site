@@ -13,14 +13,6 @@ app.get('/', (req,res) => {
 	res.sendFile(__dirname + '/assets/index.html')
 })
 
-app.get('/about', (req,res) => {
-	res.sendFile(__dirname + '/assets/about.html')
-})
-
-app.get('/contact', (req,res) => {
-	res.sendFile(__dirname + '/assets/contact.html')
-})
-
 app.listen(port, () => {
 	console.log('Michaels listening on ' + port)
 })
