@@ -7,8 +7,8 @@ const sport = 443
 
 
 const options = {
-  key: fs.readFileSync('key.pem'),
-  cert: fs.readFileSync('cert.pem')
+  key: fs.readFileSync('../privkey.pem'),
+  cert: fs.readFileSync('../fullchain.pem')
 };
 
 
@@ -18,7 +18,10 @@ app.use(express.static(__dirname));
 app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'))
 app.use('/js', express.static(__dirname + '/node_modules/bootstrap/dist/js'))
 
-
+app.enable('trust proxy')
+app.use((req, res, next) => {
+	    req.secure ? next() : res.redirect('https://' + req.headers.host + req.url)
+})
 
 app.get('/', (req,res) => {
 	res.sendFile(__dirname + '/assets/index.html')
@@ -29,5 +32,5 @@ app.get('/', (req,res) => {
 // })
 
 
-//http.createServer(app).listen(port)
+http.createServer(app).listen(80)
 https.createServer(options, app).listen(sport)
