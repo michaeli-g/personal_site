@@ -1,9 +1,0 @@
-[submodule "assets/templates/IcarusSolar"]
-	path = assets/templates/IcarusSolar
-	url = https://github.com/michaeli-g/IcarusSolar.git
-[submodule "assets/templates/launchpad-site"]
-	path = assets/templates/launchpad-site
-	url = https://github.com/michaeli-g/launchpad-site.git
-[submodule "assets/templates/smart-ecu"]
-	path = assets/templates/smart-ecu
-	url = https://github.com/michaeli-g/smart-ecu.git
