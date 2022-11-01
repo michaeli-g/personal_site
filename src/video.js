@@ -1,12 +1,18 @@
-const React = require('react');
-const ReactDom = require('react-dom');
-const ReactPlayer = require('react-player');
+function CheckRes(props) {
+    if (window.innerWidth > window.innerHeight) {
+        return (
+            <video autoPlay loop muted plays-inline="true" width="100%">
+                <source src="assets/pictures/water.mp4" type="video/mp4" />
+            </video>
+        );
+    }
+    else {
+        return (
+            <img width="100%" src="assets/pictures/sunset.jpg" />
+            )
+    }
+}
 
-const ph = 'Video should be here';
-const element = <h1>{ph}</h1>;
-
-const root = ReactDOM.createRoot(
-  document.getElementById('video')
-);
-
-root.render(element)
+const root = ReactDOM.createRoot(document.getElementById('bkg'));
+const element = <CheckRes />;
+root.render(element);
