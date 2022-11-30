@@ -21,7 +21,7 @@ function CheckContent(props) {
                 <p class="lead">
                     Leveraging bleeding edge technologies, find out how your business can cut costs and save time all while growing. From improving daily operations
                     to reaching new markets the coverage is extensive. I can also help improve the workflow of your business and bolster efficiency. I'm a full time software developer for the DoD while doing consulting in my free time.
-                    My aim is to use my skill set to help businesses improve in areas they may be lacking in or help them further excel in other areas. Below is a bit more background on who I am.
+                    My aim is to use my skill set to help businesses improve. For more background on who I am, visit the desktop site!
                 </p>
             </div>
         );
@@ -40,7 +40,7 @@ function CheckContent(props) {
                         <p class="lead">
                             Leveraging bleeding edge technologies, find out how your business can cut costs and save time all while growing. From improving daily operations
                             to reaching new markets the coverage is extensive. I can also help improve the workflow of your business and bolster efficiency. I'm a full time software developer for the DoD while doing consulting in my free time.
-                            My aim is to use my skill set to help businesses improve in areas they may be lacking in or help them further excel in other areas. Below is a bit more background on who I am.
+                            My aim is to use my skill set to help businesses improve. Below is a bit more background on who I am.
                         </p>
                         <h3 class="display-5 fw-bold lh-1 mb-3">Background</h3>
                         <p class="lead">
